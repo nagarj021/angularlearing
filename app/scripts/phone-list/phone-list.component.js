@@ -7,7 +7,6 @@ angular.
     templateUrl: 'phone-list/phone-list.template.html',
     controller: ['Phone',
       function PhoneListController(Phone) {
-        debugger;
         this.phones = Phone.query();
         console.log(this.phones)
         this.orderProp = 'age';
